@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://file.myfontastic.com/2uJTcZAww4QusSsVmi5fN9/icons.css" rel="stylesheet">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/appCanciones.js"></script>
+</head>
+<body>
+    <section class="header">
+        <a href="#" class="logo"><h2>Musica</h2></a>
+        <div class="main1">
+            <a href="#" class="logo1">Inicio</a>
+            <a href="#form1" class="logo1">Buscar</a>
+        </div>
+    </section>   
+    
+    <section class="banner" id="ini"><!--section nos va a servir para poner toda la img que vemos-->
+		<img src="img/fondo3.jpg" alt=""  class="bg">
+		<div class="content">
+            <h2>¿Quieres saber acerca de tu artista favorito y la letra de sus canciones?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, numquam. Facilis eos rem, inventore, 
+                aliquid cumque recusandae nesciunt facere nostrum atque obcaecati autem illo ratione consequuntur ipsam deleniti! Commodi, ut.
+            </p>
+            <a href="#form1" class="btn">Ir a buscar</a>
+        </div>
+	</section>
+
+    <section id="form1">
+        <form action="" class="form-register">
+            <h2 class="form-titulo">Buscador Letras Canciones</h2>
+            <div class="container-input">
+                
+                <input 
+                    type="text"
+                    class="input-48"
+                    name="artista"
+                    id="artista"
+                    value="j balvin"
+                    placeholder="Nombre Artista"
+                />
+
+                
+                <input 
+                    type="text"
+                    class="input-48"
+                    name="cancion"
+                    id="cancion"
+                    value="ginza"
+                    placeholder="Nombre Cancion"
+                />
+                <button
+                    type="button"
+                    onclick="cargarDatos()"
+                    class="btnEnviar"
+                >Buscar</button>
+                
+                <button
+                    type="button"
+                    onclick="borrarDatos()"
+                    class="btnBorrar"
+                >Borrar</button>
+
+            </div>
+        </form>
+        
+        
+    </section>
+
+    <section class="search-info" id="search-info">
+        <div class="contentBx" id="divCancion">
+            
+        </div>
+
+        <div class="imgBx" id="divArtista">
+            
+        </div>
+
+    </section>
+
+    <section class="banner1">
+		<img src="img/fondo2.jpg" alt=""  class="banner__img">
+		<div class="banner1__content"><a href="#ini" class="btn2">Ir al inicio</a></div>
+	</section>
+
+    <footer class="footer container">
+		<div class="container container--flex">
+			<div class="column column--33">
+				<h2 class="column__title">Hablemos</h2>
+             	<p class="column__txt">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
+                Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick .
+                Fox nymphs +571 325 458 4521 Brent ak mercadeo@momentum.com.</p>
+			</div>
+			<div class="column column--33">
+				<h2 class="column__title">Menu</h2>
+			</div>
+			<div class="column column--33">
+				<h2 class="column__title">Nuestras redes</h2>
+                <a href="https://www.facebook.com/" class="icon-facebook"></a>
+                <a href="https://www.instagram.com/" class="icon-instagrem"></a>
+                <a href="https://twitter.com/?lang=es" class="icon-twitter"></a>
+                <a href="https://www.youtube.com/" class="icon-youtube"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
